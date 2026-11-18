@@ -63,6 +63,15 @@ statistics-only project pulls in nothing else:
 All of them are safe Rust (`unsafe_code = "deny"`), tested on Linux and macOS,
 and need Rust 1.100 or newer.
 
+## AI assistance
+
+These crates are developed with the help of AI coding assistants. Under the
+author's direction they wrote and reviewed much of the code, the tests and
+the documentation. Every change goes through the same checks either way —
+each repository's test suite and CI, cross-checks against ROOT C++, uproot
+and scipy where they apply, and review before merging. If something looks
+wrong, please open an issue on the repository concerned.
+
 ## Status
 
 Pre-1.0 and actively developed: APIs may still change between minor
