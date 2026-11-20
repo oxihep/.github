@@ -34,7 +34,7 @@ GitHub, pinned to a release tag (shown in the table above):
 
 ```toml
 [dependencies]
-oxiroot = { git = "https://github.com/oxihep/oxiroot", tag = "v0.6.0" }
+oxiroot = { git = "https://github.com/oxihep/oxiroot", tag = "v0.6.1" }
 ```
 
 ```rust
