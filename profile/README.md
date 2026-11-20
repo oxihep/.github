@@ -20,8 +20,8 @@ pull requests are welcome on any of the repositories.
 | --- | --- | --- | --- | --- |
 | [**oxiroot**](https://github.com/oxihep/oxiroot) | Read and write ROOT files: `TTree`, RNTuple, histograms, graphs; local, HTTP and `root://` (XRootD). Verified against ROOT C++ and uproot. Re-exports the crates below. | uproot | ![tag](https://img.shields.io/github/v/tag/oxihep/oxiroot?label=) | [guide](https://oxihep.github.io/oxiroot/) |
 | [**oxihist**](https://github.com/oxihep/oxihist) | Histograms: typed axes (regular, variable, integer, category, boolean), weighted, mean and profile storages, threaded filling | boost-histogram, hist | ![tag](https://img.shields.io/github/v/tag/oxihep/oxihist?label=) | [API](https://oxihep.github.io/oxihist/) |
-| [**oxiplot**](https://github.com/oxihep/oxiplot) | Plots to SVG, PNG and PDF with a matplotlib-like API and the mplhep look; TeX math labels, log axes, stacks, ratio plots | matplotlib, mplhep | ![tag](https://img.shields.io/github/v/tag/oxihep/oxiplot?label=) | [API](https://oxihep.github.io/oxiplot/) |
-| [**oxifit**](https://github.com/oxihep/oxifit) | Curve fitting with a pure-Rust Minuit2 (MIGRAD, MINOS), and ROOT's `TFormula` expressions | iminuit | ![tag](https://img.shields.io/github/v/tag/oxihep/oxifit?label=) | [API](https://oxihep.github.io/oxifit/) |
+| [**oxiplot**](https://github.com/oxihep/oxiplot) | Plots to SVG, PNG and PDF with a matplotlib-like API and the mplhep look; TeX math labels, log axes, stacks, ratio plots, limit bands, pulls and impacts | matplotlib, mplhep | ![tag](https://img.shields.io/github/v/tag/oxihep/oxiplot?label=) | [API](https://oxihep.github.io/oxiplot/) |
+| [**oxifit**](https://github.com/oxihep/oxifit) | Fitting with a pure-Rust Minuit2 (MIGRAD, MINOS): binned and unbinned fits, CLs limits, HistFactory-style template fits, sWeights, MCMC sampling; ROOT's `TFormula` expressions | iminuit, pyhf, emcee | ![tag](https://img.shields.io/github/v/tag/oxihep/oxifit?label=) | [API](https://oxihep.github.io/oxifit/) |
 | [**oxistats**](https://github.com/oxihep/oxistats) | Statistics verified against scipy: distributions, hypothesis tests, special functions, HEP lineshapes, confidence intervals | scipy.stats, hepstats | ![tag](https://img.shields.io/github/v/tag/oxihep/oxistats?label=) | [API](https://oxihep.github.io/oxistats/) |
 | [**oxiparticle**](https://github.com/oxihep/oxiparticle) | PDG particle data and Monte Carlo particle-ID decoding | particle | ![tag](https://img.shields.io/github/v/tag/oxihep/oxiparticle?label=) | [API](https://oxihep.github.io/oxiparticle/) |
 
@@ -34,7 +34,7 @@ GitHub, pinned to a release tag (shown in the table above):
 
 ```toml
 [dependencies]
-oxiroot = { git = "https://github.com/oxihep/oxiroot", tag = "v0.4.0" }
+oxiroot = { git = "https://github.com/oxihep/oxiroot", tag = "v0.5.0" }
 ```
 
 ```rust
