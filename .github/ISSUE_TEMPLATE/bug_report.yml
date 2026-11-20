@@ -1,0 +1,35 @@
+name: Bug report
+description: Something reads, writes, computes or draws wrongly, or crashes.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A security problem (for example a file that crashes a reader) goes through the repository's **Security → Report a vulnerability** instead.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The git tag your Cargo.toml pins, e.g. v0.8.0.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead. Paste the error in full.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The smallest code that shows it. For a ROOT file, attach it (or a small one with the same problem) and say what ROOT or uproot does with it.
+      render: rust
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, `rustc --version`, and the crate features you enable.

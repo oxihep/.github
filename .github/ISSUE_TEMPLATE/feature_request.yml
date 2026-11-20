@@ -1,0 +1,21 @@
+name: Feature request
+description: Something the crates should do and do not yet.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to do
+      description: The task, in your own terms, and what stops you today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could look
+      description: An API sketch, or how ROOT, uproot or another Scikit-HEP package does it.
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Files, links, or how much of it you could write yourself.
